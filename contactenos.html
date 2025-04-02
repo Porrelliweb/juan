@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<!--Get para ver la informacion digitada en el formulario se pueda ver en la url-->
+<!--Post para que no se vea la informacion-->
+<body>
+    <form method="post" action="url.html"><!--Action es un php-->
+        <label>Nombre</label><!--Label= campo-->
+        <input type="text" name="Apellido" placeholder="Ingrese su nombre" required="true"><!--type="text" es para ingresar texto --> <!--name="nombre"= para bases de datos-->
+        <br> <!--placeholder= lo deja dentro del campo pero se borra cuando coloca algo-->
+        <label>Apellido</label>
+        <input type="text" name="Apellido" placeholder="Ingrese su apellido" required="true">
+        <br>
+        <label>Ingrese su contraseña</label><!--password= contraseña-->
+        <input type="password" name="password" placeholder="Ingrese su contraseña" required="true">
+        <br>
+        <label>Ingrese su comentario</label><!--textarea= para un parrafo para que sea mas grande-->
+        <textarea name="Comentario" placeholder="Digite su comentario"></textarea>
+        <br>
+        <label>Ingrese su edad</label>
+        <input type="number" name="edad" min="5" max="50">
+        <br>
+        <p>Estudios realizados</p>
+        <input type="checkbox" name="Estudios"><label>Primaria</label><!--chexbox= para varias opciones-->
+        <input type="checkbox" name="Estudios"><label>Bachillerato</label>
+        <input type="checkbox" name="Estudios"><label>Universitario</label>
+        <p>Genero</p>
+        <input type="radio" name="Genero" value="Masculino"><!--radio= para 1 opcion-->
+        <label>Masculino</label>
+        <input type="radio" name="Genero" value="Femenino">
+        <label>Femenino</label>
+        <p>Tipo de documento</p>
+        <select name="documento"> <!--Lista desplegable-->
+            <option value="Cedulaciudadania">Cédula de Ciudadania</option>
+            <option value="Cedulaextrangeria">Cédula de Extrangeria</option>
+            <option value="Tarjeta de identidad">Tarjeta de Identidad</option>
+        </select>
+        <br>
+        <label>Correo electronico</label>
+        <input type="email">
+        <br>
+        <label>Seleccione la fecha</label>
+        <input type="date">
+        <br>
+        <label>Seleccione hora</label>
+        <input type="time">
+        <br>
+        <label>Seleccione fecha y hora local</label>
+        <input type="datetime-local">
+        <br>
+        <label>Seleccione el mes</label>
+        <input type="month">
+        <br>
+        <label>Seleccione la semana</label>
+        <input type="week">
+        <br>
+        <input type="submit" name="Registrar" value="Registrar"><!--Enviar formulario-->
+    </form>
+</body>
+</html>
